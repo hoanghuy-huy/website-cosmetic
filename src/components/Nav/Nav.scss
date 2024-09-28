@@ -1,0 +1,92 @@
+.nav-wrapper {
+    height: 80px;
+    width: 100%;
+    padding: 0 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    .logo {
+        a {
+            font-size: 28px;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+    }
+
+    ul {
+        li {
+            display: inline-block;
+            margin: 0 15px;
+            a {
+                &:hover {
+                    color: var(--second-color);
+                }
+            }
+        }
+    }
+
+    .action {
+        .btn {
+            svg {
+                height: 40px;
+                width: 40px;
+                color: var(--primary-color);
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                box-shadow: inset 4px 4px 4px rgba(255, 255, 255, 0.4);
+                border-radius: 3px;
+
+                transform: 0.6s;
+                display: none;
+                &:active {
+                    transform: scale(0.9);
+                    box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0.4);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .action {
+        .btn {
+            svg {
+                display: block !important;
+            }
+        }
+    }
+
+    .nav-wrapper {
+        .show-nav {
+            left: 0%;
+        }
+        ul {
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            background-color: var(--primary-color) !important;
+            // left: 0%;
+            left: -100%;
+            transform: .6s !important;
+
+            li {
+                display: block;
+                padding: 25px 0;
+                padding-left: 15%;
+                border-bottom: 0.2px solid rgba(255, 255, 255, 0.1);
+                a {
+                    color: var(--second-color) !important;
+                }
+            }
+        }
+    }
+}
+
