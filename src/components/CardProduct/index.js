@@ -19,7 +19,7 @@ const CardProduct = () => {
                 </div>
             </div>
             <div className="caption">
-                <h3 className="title">Kem Chống Nắng SPF 30+/PA++++</h3>
+                <h3 className="title">Kem Chống Nắng SPF 30+/PA++++ Kem Chống Nắng SPF 30+/</h3>
                 <div className="desc">
                     Ánh nắng mặt trời với thành phần chủ yếu là các tia UV
                     A/B/C. Tiếp xúc với tia cực tím (tia UV) sẽ gây ra khoảng
