@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-
+    user-select: none;
     position: fixed;
     top: 0;
     z-index: 999;
@@ -17,19 +17,43 @@
             font-weight: 600;
         }
     }
-
+    .contact {
+        span {
+            display: block;
+        }
+        .title {
+            color: var(--second-color);
+        }
+        .phone {
+            color: var(--primary-color);
+        }
+    }
     ul {
         li {
             display: inline-block;
             margin: 0 15px;
+            .active {
+                color: var(--second-color);
+            }
             a {
+                transition-duration: 200ms;
+                transition-property: all;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                transition-timing-function: linear;
+                color: var(--primary-color);
                 &:hover {
                     color: var(--second-color);
                 }
             }
         }
     }
-
+    ul > li > a {
+        position: relative;
+        transition: background-size 350ms;
+        background: linear-gradient(0deg, currentColor, currentColor) no-repeat right bottom / 0 1px;
+        font-weight: 700 !important;
+        text-transform: uppercase;
+    }
     .action {
         .btn {
             svg {
@@ -68,11 +92,14 @@
         .show-nav {
             left: 0%;
         }
+        .contact {
+            display: none;
+        }
         ul {
             position: absolute;
             top: 100%;
             width: 100%;
-            background-color: var(--primary-color) !important;
+            background-color: rgba(220, 38, 38, 0.8) !important;
             // left: 0%;
             left: -100%;
             transform: .6s !important;
@@ -83,7 +110,11 @@
                 padding-left: 15%;
                 border-bottom: 0.2px solid rgba(255, 255, 255, 0.1);
                 a {
-                    color: var(--second-color) !important;
+                    color: #fff !important;
+                    font-weight: 300 !important;
+                    font-size: 20px !important;
+                    line-height: 1.25 !important;
+                    text-transform: uppercase !important;
                 }
             }
         }

@@ -5,22 +5,32 @@ import { faCalendarDays } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
-const AboutPage = () => {
+const About = () => {
     return (
         <div className="about-wrapper section">
             <div className="about-content">
-                <small className="section-title">About Us</small>
+                <small className="section-title">Về chúng tôi</small>
                 <h2>
-                    What are your Advantages <br /> Compare to others
+                    Công ty TNHH HAROLD <br /> và những điều nổi bật
                 </h2>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis quibusdam ratione ut velit modi, cum, amet
-                    repudiandae possimus, accusantium deleniti vitae non
-                    voluptatibus natus necessitatibus explicabo quidem sint
-                    nesciunt distinctio?
+                    Công ty TNHH Harold, với nhiều năm kinh nghiệm trong ngành
+                    sản xuất và kinh doanh mỹ phẩm, tự hào là một trong những
+                    đơn vị hàng đầu cung cấp các dịch vụ từ sản xuất, gia công
+                    đến nghiên cứu và phát triển các dòng mỹ phẩm an toàn, hiệu
+                    quả, chất lượng cao. Chúng tôi áp dụng mô hình sản xuất khép
+                    kín cùng với trang thiết bị tiên tiến, đảm bảo chất lượng
+                    cho từng khâu trong quy trình sản xuất theo tiêu chuẩn CGMP
+                    ASEAN . Đội ngũ nhân viên chuyên nghiệp, được đào tạo bài
+                    bản, luôn sẵn sàng đáp ứng nhu cầu của khách hàng/ đối tác.
+                    Nhà Harold cam kết cung cấp số lượng lớn sản phẩm an toàn-
+                    hiệu quả, chất lượng cao và đồng thời tạo ra thương hiệu
+                    riêng cho khách hàng/đối tác tiềm năng nhằm phát triển bền
+                    vững và khẳng định vị thế trong lòng người tiêu dùng. Harold
+                    không chỉ là một thương hiệu mà còn là một phong cách sống
+                    vì sức khoẻ và sắc đẹp.
                 </p>
-                <div className="about-cards">
+                {/* <div className="about-cards">
                     <div className="about-card">
                         <div className="about-title">
                             <div className="icon">
@@ -57,7 +67,7 @@ const AboutPage = () => {
                         </div>
                         <p>Lorem, ipsum dolor sit amet consectetur x</p>
                     </div>
-                </div>
+                </div> */}
             </div>
             <div className="about-img">
                 <img src={images.aboutImg} alt="about img" />
@@ -66,4 +76,4 @@ const AboutPage = () => {
     );
 };
 
-export default AboutPage;
+export default About;

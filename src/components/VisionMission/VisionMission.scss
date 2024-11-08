@@ -1,0 +1,69 @@
+.vision-mission-wrapper {
+    flex-direction: row !important;
+    user-select: none;
+
+    .vision-mission-content {
+        .title {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 1.33;
+        }
+        .cover-img {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .text-content {
+            display: flex;
+            margin-top: 0;
+            h3 {
+                font-size: calc(24 / 1920* 100rem);
+            }
+            .mission {
+                padding-top: calc(40 / 1920 * 100rem);
+                padding-right: calc(48 / 1920 * 100rem);
+                padding-bottom: calc(40 / 1920 * 100rem);
+                padding-left: calc(48 / 1920 * 100rem);
+                background-color: #f6f6f6;
+            }
+            .vision {
+                padding-top: calc(40 / 1920 * 100rem);
+                padding-right: calc(48 / 1920 * 100rem);
+                padding-bottom: calc(40 / 1920 * 100rem);
+                padding-left: calc(48 / 1920 * 100rem);
+                background-color: #efefef;
+            }
+            .description {
+                margin-top: calc(24 / 1920* 100rem);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.25;
+                color: rgb(58 54 55 / 1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .text-content {
+       
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .text-content {
+       flex-direction: column !important;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+}
